@@ -1,3 +1,5 @@
 <resources>
-    <string name="hello_world">Hello Round World!</string>
+    <string name="hello_world">Hello round World!</string>
+    <string name="connect">CONNECT</string>
+    <string name="send">SEND</string>
 </resources>

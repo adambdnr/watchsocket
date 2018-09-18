@@ -15,11 +15,21 @@
         android:padding="@dimen/inner_frame_layout_padding"
         app:boxedEdges="all">
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+        <Button
+            android:id="@+id/button_connect"
+            android:layout_gravity="start"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:text="@string/connect"
+            android:background="@drawable/roundbutton"/>
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_gravity="end"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:text="@string/send"
+            android:background="@drawable/roundbutton"/>
 
     </FrameLayout>
 </android.support.wear.widget.BoxInsetLayout>
