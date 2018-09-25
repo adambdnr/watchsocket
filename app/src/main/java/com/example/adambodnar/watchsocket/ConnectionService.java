@@ -17,6 +17,12 @@ public class ConnectionService extends Service {
         }
     }
 
+    @Nullable
+    @Override
+    public IBinder onBind(Intent intent) {
+        return mBinder;
+    }
+
     //for implementing the connection
     @Override
     public void onCreate() {
@@ -36,12 +42,6 @@ public class ConnectionService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-    }
-
-    @Nullable
-    @Override
-    public IBinder onBind(Intent intent) {
-        return mBinder;
     }
 
     public void sendMessage(String message) {
